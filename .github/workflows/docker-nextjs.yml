@@ -31,7 +31,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          IMAGE_REPO=390149884275.dkr.ecr.us-east-2.amazonaws.com/nextjs-app:BUILD_NUMBER
-          docker build -t $IMAGE_REPO:BUILD_NUMBER .
-          docker push $IMAGE_REPO:BUILD_NUMBER
+          IMAGE_REPO=390149884275.dkr.ecr.us-east-2.amazonaws.com/nextjs-app
+          docker build -t $IMAGE_REPO:$BUILD_NUMBER .
+          docker push $IMAGE_REPO:$BUILD_NUMBER
 
